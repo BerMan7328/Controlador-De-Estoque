@@ -35,18 +35,20 @@
             this.fornecedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.categoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.subcategoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.produtosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.fornecedoresToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.categoriasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.subcategoriasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.produtosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.movimentaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.relatóriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ferramentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.calculadoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -73,6 +75,7 @@
             this.fornecedoresToolStripMenuItem,
             this.toolStripSeparator1,
             this.categoriaToolStripMenuItem,
+            this.subcategoriaToolStripMenuItem,
             this.produtosToolStripMenuItem});
             this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
             this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(82, 24);
@@ -102,6 +105,13 @@
             this.categoriaToolStripMenuItem.Text = "Categoria";
             this.categoriaToolStripMenuItem.Click += new System.EventHandler(this.categoriaToolStripMenuItem_Click);
             // 
+            // subcategoriaToolStripMenuItem
+            // 
+            this.subcategoriaToolStripMenuItem.Name = "subcategoriaToolStripMenuItem";
+            this.subcategoriaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.subcategoriaToolStripMenuItem.Text = "Subcategoria";
+            this.subcategoriaToolStripMenuItem.Click += new System.EventHandler(this.subcategoriaToolStripMenuItem_Click);
+            // 
             // produtosToolStripMenuItem
             // 
             this.produtosToolStripMenuItem.Name = "produtosToolStripMenuItem";
@@ -115,6 +125,7 @@
             this.fornecedoresToolStripMenuItem1,
             this.toolStripSeparator2,
             this.categoriasToolStripMenuItem,
+            this.subcategoriasToolStripMenuItem,
             this.produtosToolStripMenuItem1});
             this.consultaToolStripMenuItem.Name = "consultaToolStripMenuItem";
             this.consultaToolStripMenuItem.Size = new System.Drawing.Size(80, 24);
@@ -123,31 +134,37 @@
             // clientesToolStripMenuItem1
             // 
             this.clientesToolStripMenuItem1.Name = "clientesToolStripMenuItem1";
-            this.clientesToolStripMenuItem1.Size = new System.Drawing.Size(181, 26);
+            this.clientesToolStripMenuItem1.Size = new System.Drawing.Size(186, 26);
             this.clientesToolStripMenuItem1.Text = "Clientes";
             // 
             // fornecedoresToolStripMenuItem1
             // 
             this.fornecedoresToolStripMenuItem1.Name = "fornecedoresToolStripMenuItem1";
-            this.fornecedoresToolStripMenuItem1.Size = new System.Drawing.Size(181, 26);
+            this.fornecedoresToolStripMenuItem1.Size = new System.Drawing.Size(186, 26);
             this.fornecedoresToolStripMenuItem1.Text = "Fornecedores";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(178, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(183, 6);
             // 
             // categoriasToolStripMenuItem
             // 
             this.categoriasToolStripMenuItem.Name = "categoriasToolStripMenuItem";
-            this.categoriasToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.categoriasToolStripMenuItem.Size = new System.Drawing.Size(186, 26);
             this.categoriasToolStripMenuItem.Text = "Categorias";
             this.categoriasToolStripMenuItem.Click += new System.EventHandler(this.categoriasToolStripMenuItem_Click);
+            // 
+            // subcategoriasToolStripMenuItem
+            // 
+            this.subcategoriasToolStripMenuItem.Name = "subcategoriasToolStripMenuItem";
+            this.subcategoriasToolStripMenuItem.Size = new System.Drawing.Size(186, 26);
+            this.subcategoriasToolStripMenuItem.Text = "Subcategorias";
             // 
             // produtosToolStripMenuItem1
             // 
             this.produtosToolStripMenuItem1.Name = "produtosToolStripMenuItem1";
-            this.produtosToolStripMenuItem1.Size = new System.Drawing.Size(181, 26);
+            this.produtosToolStripMenuItem1.Size = new System.Drawing.Size(186, 26);
             this.produtosToolStripMenuItem1.Text = "Produtos";
             // 
             // movimentaçãoToolStripMenuItem
@@ -170,18 +187,18 @@
             this.ferramentasToolStripMenuItem.Size = new System.Drawing.Size(104, 24);
             this.ferramentasToolStripMenuItem.Text = "Ferramentas";
             // 
+            // calculadoraToolStripMenuItem
+            // 
+            this.calculadoraToolStripMenuItem.Name = "calculadoraToolStripMenuItem";
+            this.calculadoraToolStripMenuItem.Size = new System.Drawing.Size(171, 26);
+            this.calculadoraToolStripMenuItem.Text = "Calculadora";
+            this.calculadoraToolStripMenuItem.Click += new System.EventHandler(this.calculadoraToolStripMenuItem_Click);
+            // 
             // sobreToolStripMenuItem
             // 
             this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
             this.sobreToolStripMenuItem.Size = new System.Drawing.Size(62, 24);
             this.sobreToolStripMenuItem.Text = "Sobre";
-            // 
-            // calculadoraToolStripMenuItem
-            // 
-            this.calculadoraToolStripMenuItem.Name = "calculadoraToolStripMenuItem";
-            this.calculadoraToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.calculadoraToolStripMenuItem.Text = "Calculadora";
-            this.calculadoraToolStripMenuItem.Click += new System.EventHandler(this.calculadoraToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -210,7 +227,6 @@
         private System.Windows.Forms.ToolStripMenuItem fornecedoresToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem categoriaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem produtosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem movimentaçãoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem relatóriosToolStripMenuItem;
@@ -220,7 +236,10 @@
         private System.Windows.Forms.ToolStripMenuItem fornecedoresToolStripMenuItem1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem categoriasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem produtosToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem calculadoraToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem subcategoriaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem produtosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem subcategoriasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem produtosToolStripMenuItem1;
     }
 }

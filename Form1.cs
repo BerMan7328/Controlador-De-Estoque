@@ -47,5 +47,12 @@ namespace _3M_New
         {
             System.Diagnostics.Process.Start("calc");
         }
+
+        private void subcategoriaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCadastroSubCategoria f= new frmCadastroSubCategoria();
+            f.ShowDialog();
+            f.Dispose();
+        }
     }
 }
