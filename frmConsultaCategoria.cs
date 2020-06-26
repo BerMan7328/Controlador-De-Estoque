@@ -40,7 +40,8 @@ namespace _3M_New
 
         private void frmConsultaCategoria_Load_1(object sender, EventArgs e)
         {
-            dgvDados.Columns[0].HeaderText = "Código";
+            btLocalizar_Click(sender, e);
+            dgvDados.Columns[0].HeaderText = "Código Categoria";
             dgvDados.Columns[1].HeaderText = "Categoria";
         }
 

@@ -54,5 +54,12 @@ namespace _3M_New
             f.ShowDialog();
             f.Dispose();
         }
+
+        private void subcategoriasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultaSubCategoria f = new frmConsultaSubCategoria();
+            f.ShowDialog();
+            f.Dispose();
+        }
     }
 }

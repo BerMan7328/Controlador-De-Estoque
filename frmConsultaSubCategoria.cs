@@ -29,9 +29,11 @@ namespace _3M_New
 
         private void frmConsultaSubCategoria_Load(object sender, EventArgs e)
         {
-            dgvDados.Columns[0].HeaderText = "Código da Subcategoria";
-            dgvDados.Columns[1].HeaderText = "SubCategoria";
-            dgvDados.Columns[2].HeaderText = "Código da Categoria";
+            btLocalizar_Click(sender, e);
+            dgvDados.Columns[0].HeaderText = "Código Subcategoria";
+            dgvDados.Columns[1].HeaderText = "Subcategoria";
+            dgvDados.Columns[2].HeaderText = "Código Categoria";
+            dgvDados.Columns[3].HeaderText = "Categoria";
         }
 
         private void dgvDados_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -41,6 +43,11 @@ namespace _3M_New
                 this.codigo = Convert.ToInt32(dgvDados.Rows[e.RowIndex].Cells[0].Value);
                 this.Close();
             }
+        }
+
+        private void dgvDados_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
