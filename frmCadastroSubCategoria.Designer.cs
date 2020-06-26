@@ -46,9 +46,29 @@
             this.pnDados.Controls.Add(this.label2);
             this.pnDados.Controls.Add(this.label1);
             // 
+            // bttCancelar
+            // 
+            this.bttCancelar.Click += new System.EventHandler(this.bttCancelar_Click);
+            // 
+            // bttLocalizar
+            // 
+            this.bttLocalizar.Click += new System.EventHandler(this.bttLocalizar_Click);
+            // 
+            // bttAlterar
+            // 
+            this.bttAlterar.Click += new System.EventHandler(this.bttAlterar_Click);
+            // 
+            // bttSalvar
+            // 
+            this.bttSalvar.Click += new System.EventHandler(this.bttSalvar_Click);
+            // 
             // bttInserir
             // 
             this.bttInserir.Click += new System.EventHandler(this.bttInserir_Click);
+            // 
+            // bttExcluir
+            // 
+            this.bttExcluir.Click += new System.EventHandler(this.bttExcluir_Click);
             // 
             // label1
             // 
