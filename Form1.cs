@@ -61,5 +61,19 @@ namespace _3M_New
             f.ShowDialog();
             f.Dispose();
         }
+
+        private void unidadeDeMedidaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCadastroUnidadeDeMedida f = new frmCadastroUnidadeDeMedida();
+            f.ShowDialog();
+            f.Dispose();
+        }
+
+        private void unidadeDeMedidaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmConsultaUnidadeDeMedida f = new frmConsultaUnidadeDeMedida();
+            f.ShowDialog();
+            f.Dispose();
+        }
     }
 }
