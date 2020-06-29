@@ -7,7 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using DAL;
 using Modelo;
-using BBL;
+using BLL;
 
 namespace _3M_New
 {

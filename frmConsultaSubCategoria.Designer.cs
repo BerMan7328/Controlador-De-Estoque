@@ -88,6 +88,7 @@
             this.Controls.Add(this.dgvDados);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmConsultaSubCategoria";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta Subcategoria";
             this.Load += new System.EventHandler(this.frmConsultaSubCategoria_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDados)).EndInit();

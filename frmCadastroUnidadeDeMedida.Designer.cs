@@ -32,11 +32,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtCod = new System.Windows.Forms.TextBox();
             this.txtUnidadeMedida = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnDados.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnDados
             // 
+            this.pnDados.Controls.Add(this.pictureBox1);
             this.pnDados.Controls.Add(this.txtUnidadeMedida);
             this.pnDados.Controls.Add(this.txtCod);
             this.pnDados.Controls.Add(this.label2);
@@ -102,6 +105,16 @@
             this.txtUnidadeMedida.Size = new System.Drawing.Size(349, 22);
             this.txtUnidadeMedida.TabIndex = 3;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::_3M_New.Properties.Resources.logo3mreal;
+            this.pictureBox1.Location = new System.Drawing.Point(418, 31);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(594, 485);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmCadastroUnidadeDeMedida
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -111,6 +124,7 @@
             this.Text = "Cadastro Unidade de Medida";
             this.pnDados.ResumeLayout(false);
             this.pnDados.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -121,5 +135,6 @@
         private System.Windows.Forms.TextBox txtCod;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

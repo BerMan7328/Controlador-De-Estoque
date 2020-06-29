@@ -87,6 +87,7 @@
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmConsultaUnidadeDeMedida";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta Unidade De Medida";
             this.Load += new System.EventHandler(this.frmConsultaUnidadeDeMedida_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDados)).EndInit();

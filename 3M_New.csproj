@@ -64,6 +64,12 @@
     <Compile Include="FRMCadastroCategoria.Designer.cs">
       <DependentUpon>FRMCadastroCategoria.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCadastroProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroProduto.Designer.cs">
+      <DependentUpon>frmCadastroProduto.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCadastroSubCategoria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +111,9 @@
     <EmbeddedResource Include="FRMCadastroCategoria.resx">
       <DependentUpon>FRMCadastroCategoria.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroProduto.resx">
+      <DependentUpon>frmCadastroProduto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCadastroSubCategoria.resx">
       <DependentUpon>frmCadastroSubCategoria.cs</DependentUpon>
     </EmbeddedResource>
@@ -144,9 +153,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BBL\BBL.csproj">
+    <ProjectReference Include="..\BBL\BLL.csproj">
       <Project>{c8de1bee-3ca1-4197-bdc1-2a2d11a00e52}</Project>
-      <Name>BBL</Name>
+      <Name>BLL</Name>
     </ProjectReference>
     <ProjectReference Include="..\DAL\DAL.csproj">
       <Project>{a71766bd-fde4-49ba-a0ca-c9bef63af17d}</Project>

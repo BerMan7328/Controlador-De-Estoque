@@ -34,11 +34,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtScatCod = new System.Windows.Forms.TextBox();
             this.txtNome = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnDados.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnDados
             // 
+            this.pnDados.Controls.Add(this.pictureBox1);
             this.pnDados.Controls.Add(this.txtNome);
             this.pnDados.Controls.Add(this.txtScatCod);
             this.pnDados.Controls.Add(this.label3);
@@ -123,15 +126,27 @@
             this.txtNome.Size = new System.Drawing.Size(317, 22);
             this.txtNome.TabIndex = 5;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::_3M_New.Properties.Resources.logo3mreal;
+            this.pictureBox1.Location = new System.Drawing.Point(375, 59);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(625, 427);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmCadastroSubCategoria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.ClientSize = new System.Drawing.Size(1045, 690);
             this.Name = "frmCadastroSubCategoria";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Subcategoria";
             this.Load += new System.EventHandler(this.frmCadastroSubCategoria_Load);
             this.pnDados.ResumeLayout(false);
             this.pnDados.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -144,5 +159,6 @@
         private System.Windows.Forms.ComboBox cbCatCod;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

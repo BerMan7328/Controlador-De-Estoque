@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using DAL;
-using BBL;
+using BLL;
 using Modelo;
 
 namespace _3M_New

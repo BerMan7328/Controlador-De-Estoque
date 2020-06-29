@@ -97,5 +97,18 @@ namespace _3M_New
                 snippingToolProcess.Start();
             }
         }
+
+        private void produtosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCadastroProduto f = new frmCadastroProduto();
+            f.ShowDialog();
+            f.Dispose();
+
+        }
+
+        private void cadastroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
