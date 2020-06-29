@@ -75,5 +75,10 @@ namespace _3M_New
             f.ShowDialog();
             f.Dispose();
         }
+
+        private void notasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("notepad");
+        }
     }
 }
