@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -79,6 +80,22 @@ namespace _3M_New
         private void notasToolStripMenuItem_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("notepad");
+        }
+
+        private void capturaDeTelaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process snippingToolProcess = new Process();
+            snippingToolProcess.EnableRaisingEvents = true;
+            if (!Environment.Is64BitProcess)
+            {
+                snippingToolProcess.StartInfo.FileName = "C:\\Windows\\sysnative\\SnippingTool.exe";
+                snippingToolProcess.Start();
+            }
+            else
+            {
+                snippingToolProcess.StartInfo.FileName = "C:\\Windows\\system32\\SnippingTool.exe";
+                snippingToolProcess.Start();
+            }
         }
     }
 }
