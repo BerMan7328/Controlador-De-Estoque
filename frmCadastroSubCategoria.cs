@@ -123,6 +123,11 @@ namespace _3M_New
             f.Dispose();
             
         }
+
+        private void cbCatCod_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

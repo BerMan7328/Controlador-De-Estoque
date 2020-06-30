@@ -1,6 +1,6 @@
 ﻿namespace _3M_New
 {
-    partial class FRMCadastroCategoria
+    partial class frmCadastroCategoria
     {
         /// <summary>
         /// Variável de designer necessária.

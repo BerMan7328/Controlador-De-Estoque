@@ -25,7 +25,7 @@ namespace _3M_New
 
         private void categoriaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FRMCadastroCategoria f = new FRMCadastroCategoria();
+            frmCadastroCategoria f = new frmCadastroCategoria();
             f.ShowDialog();
             f.Dispose();
         }
@@ -109,6 +109,13 @@ namespace _3M_New
         private void cadastroToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void produtosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmConsultaProduto f = new frmConsultaProduto();
+            f.ShowDialog();
+            f.Dispose();
         }
     }
 }

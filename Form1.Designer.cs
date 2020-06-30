@@ -191,6 +191,7 @@
             this.produtosToolStripMenuItem1.Name = "produtosToolStripMenuItem1";
             this.produtosToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
             this.produtosToolStripMenuItem1.Text = "Produtos";
+            this.produtosToolStripMenuItem1.Click += new System.EventHandler(this.produtosToolStripMenuItem1_Click);
             // 
             // movimentaçãoToolStripMenuItem
             // 

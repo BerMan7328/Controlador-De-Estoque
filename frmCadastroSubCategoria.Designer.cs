@@ -100,6 +100,7 @@
             this.cbCatCod.Name = "cbCatCod";
             this.cbCatCod.Size = new System.Drawing.Size(317, 24);
             this.cbCatCod.TabIndex = 2;
+            this.cbCatCod.SelectedIndexChanged += new System.EventHandler(this.cbCatCod_SelectedIndexChanged);
             // 
             // label3
             // 

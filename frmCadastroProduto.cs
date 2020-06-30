@@ -17,7 +17,15 @@ namespace _3M_New
         {
             InitializeComponent();
         }
-
+        private void LimpaTela()
+        {
+            txtCodigo.Clear();
+            txtNome.Clear();
+            txtDescricao.Clear();
+            txtValorPago.Clear();
+            txtValorVenda.Clear();
+            txtQtde.Clear();
+        }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
@@ -32,6 +40,28 @@ namespace _3M_New
         private void frmCadastroProduto_Load(object sender, EventArgs e)
         {
             this.alteraBotoes(1);
+            DALConexao cx = new DALConexao(DadosDaConexao.StringDeConexao);
+            BLLCategoria bll = new BLLCategoria(cx);
+            cbCategoria.DataSource = bll.Localizar("");
+            cbCategoria.DisplayMember = "cat_nome";
+            cbCategoria.ValueMember = "cat_cod";
+
+            try
+            {
+                BLLSubCategoria sbll = new BLLSubCategoria(cx);
+                cbSubCategoria.DataSource = sbll.LocalizarPorCategoria((int) cbCategoria.SelectedValue);
+                cbSubCategoria.DisplayMember = "scat_nome";
+                cbSubCategoria.ValueMember = "scat_cod";
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show(erro.Message);
+            }
+
+            BLLUnidadeDeMedida ubll = new BLLUnidadeDeMedida(cx);
+            cbUnd.DataSource = ubll.Localizar("");
+            cbUnd.DisplayMember = "umed_nome";
+            cbUnd.ValueMember = "umed_cod";
         }
 
         private void txtValorVenda_KeyPress(object sender, KeyPressEventArgs e)
@@ -75,11 +105,11 @@ namespace _3M_New
         {
             if (txtValorVenda.Text.Contains(".") == false)
             {
-                txtValorVenda.Text += ".00";
+                txtValorVenda.Text += ",00";
             }
             else
             {
-                if (txtValorVenda.Text.IndexOf(".") == txtValorVenda.Text.Length - 1)
+                if (txtValorVenda.Text.IndexOf(",") == txtValorVenda.Text.Length - 1)
                 {
                     txtValorVenda.Text += "00";
                 }
@@ -90,19 +120,19 @@ namespace _3M_New
             }
             catch
             {
-                txtValorVenda.Text = "0.00";
+                txtValorVenda.Text = "0,00";
             }
         }
 
         private void txtValorPago_Leave(object sender, EventArgs e)
         {
-            if (txtValorPago.Text.Contains(".") == false)
+            if (txtValorPago.Text.Contains(",") == false)
             {
-                txtValorPago.Text += ".00";
+                txtValorPago.Text += ",00";
             }
             else
             {
-                if (txtValorPago.Text.IndexOf(".") == txtValorPago.Text.Length - 1)
+                if (txtValorPago.Text.IndexOf(",") == txtValorPago.Text.Length - 1)
                 {
                     txtValorPago.Text += "00";
                 }
@@ -113,7 +143,7 @@ namespace _3M_New
             }
             catch
             {
-                txtValorPago.Text = "0.00";
+                txtValorPago.Text = "0,00";
             }
         }
 
@@ -145,7 +175,94 @@ namespace _3M_New
         {
 
         }
-       
+
+        private void cbCategoria_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DALConexao cx = new DALConexao(DadosDaConexao.StringDeConexao);
+            try
+            {
+                cbSubCategoria.Text = "";
+                BLLSubCategoria sbll = new BLLSubCategoria(cx);
+                cbSubCategoria.DataSource = sbll.LocalizarPorCategoria((int) cbCategoria.SelectedValue);
+                cbSubCategoria.DisplayMember = "scat_nome";
+                cbSubCategoria.ValueMember = "scat_cod";
+            }
+            catch (Exception erro )
+            {
+                MessageBox.Show(erro.Message);
+            }
+            
+        }
+
+        private void bttCancelar_Click(object sender, EventArgs e)
+        {
+            this.alteraBotoes(1);
+            this.LimpaTela();
+        }
+
+        private void bttSalvar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ModeloProduto modelo = new ModeloProduto();
+                modelo.ProNome = txtNome.Text;
+                modelo.ProDescricao = txtDescricao.Text;
+                modelo.ProValorPago = Convert.ToDouble(txtValorPago.Text);
+                modelo.ProValorVenda = Convert.ToDouble(txtValorVenda.Text);
+                modelo.ProQtde = Convert.ToDouble(txtQtde.Text);
+                modelo.UmedCod = Convert.ToInt32(cbUnd.SelectedValue);
+                modelo.ScatCod = Convert.ToInt32(cbCategoria.SelectedValue);
+                modelo.CatCod = Convert.ToInt32(cbSubCategoria.SelectedValue);
+                DALConexao cx = new DALConexao(DadosDaConexao.StringDeConexao);
+                BLLProduto bll = new BLLProduto(cx);
+                if (this.operacao == "inserir")
+                {
+                    bll.Incluir(modelo);
+                    MessageBox.Show("Cadastro realizado! Código " + modelo.ProCod.ToString());
+                }
+                else
+                {
+                    modelo.ProCod = Convert.ToInt32(txtCodigo.Text);
+                    bll.Alterar(modelo);
+                    MessageBox.Show("Cadastro Alterado com Sucesso!");
+                }
+                this.LimpaTela();
+                this.alteraBotoes(1);
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show(erro.Message);
+            }
+        }
+
+        private void bttLocalizar_Click(object sender, EventArgs e)
+        {
+            frmConsultaProduto f = new frmConsultaProduto();
+            f.ShowDialog();
+            if (f.codigo != 0)
+            {
+                DALConexao cx = new DALConexao(DadosDaConexao.StringDeConexao);
+                BLLProduto bll = new BLLProduto(cx);
+                ModeloProduto modelo = bll.CarregaModeloProduto(f.codigo);
+                txtCodigo.Text = modelo.CatCod.ToString();
+                txtCodigo.Text = modelo.ProCod.ToString();
+                txtDescricao.Text = modelo.ProDescricao.ToString();
+                txtNome.Text = modelo.ProNome;
+                txtQtde.Text = modelo.ProQtde.ToString();
+                txtValorPago.Text = modelo.ProValorPago.ToString();
+                txtValorVenda.Text = modelo.ProValorVenda.ToString();
+                cbCategoria.SelectedValue = modelo.CatCod;
+                cbSubCategoria.SelectedValue = modelo.ScatCod;
+                cbUnd.SelectedValue = modelo.UmedCod;
+                alteraBotoes(3);
+            }
+            else
+            {
+                this.LimpaTela();
+                this.alteraBotoes(1);
+            }
+            f.Dispose();
+        }
     }
 }
 

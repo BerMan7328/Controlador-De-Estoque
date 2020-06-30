@@ -58,11 +58,11 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
-    <Compile Include="FRMCadastroCategoria.cs">
+    <Compile Include="frmCadastroCategoria.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FRMCadastroCategoria.Designer.cs">
-      <DependentUpon>FRMCadastroCategoria.cs</DependentUpon>
+    <Compile Include="frmCadastroCategoria.Designer.cs">
+      <DependentUpon>frmCadastroCategoria.cs</DependentUpon>
     </Compile>
     <Compile Include="frmCadastroProduto.cs">
       <SubType>Form</SubType>
@@ -88,6 +88,12 @@
     <Compile Include="frmConsultaCategoria.Designer.cs">
       <DependentUpon>frmConsultaCategoria.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmConsultaProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaProduto.Designer.cs">
+      <DependentUpon>frmConsultaProduto.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmConsultaSubCategoria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,8 +114,8 @@
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FRMCadastroCategoria.resx">
-      <DependentUpon>FRMCadastroCategoria.cs</DependentUpon>
+    <EmbeddedResource Include="frmCadastroCategoria.resx">
+      <DependentUpon>frmCadastroCategoria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCadastroProduto.resx">
       <DependentUpon>frmCadastroProduto.cs</DependentUpon>
@@ -122,6 +128,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmConsultaCategoria.resx">
       <DependentUpon>frmConsultaCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaProduto.resx">
+      <DependentUpon>frmConsultaProduto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmConsultaSubCategoria.resx">
       <DependentUpon>frmConsultaSubCategoria.cs</DependentUpon>

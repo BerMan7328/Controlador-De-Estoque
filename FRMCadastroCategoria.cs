@@ -12,9 +12,9 @@ using BLL;
 
 namespace _3M_New
 {
-    public partial class FRMCadastroCategoria : _3M_New.Form2
+    public partial class frmCadastroCategoria : _3M_New.Form2
     {
-        public FRMCadastroCategoria()
+        public frmCadastroCategoria()
         {
             InitializeComponent();
         }

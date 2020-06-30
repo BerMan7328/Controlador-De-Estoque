@@ -74,9 +74,21 @@
             this.pnDados.Controls.Add(this.label2);
             this.pnDados.Controls.Add(this.label1);
             // 
+            // bttCancelar
+            // 
+            this.bttCancelar.Click += new System.EventHandler(this.bttCancelar_Click);
+            // 
+            // bttLocalizar
+            // 
+            this.bttLocalizar.Click += new System.EventHandler(this.bttLocalizar_Click);
+            // 
             // bttAlterar
             // 
             this.bttAlterar.Click += new System.EventHandler(this.bttAlterar_Click);
+            // 
+            // bttSalvar
+            // 
+            this.bttSalvar.Click += new System.EventHandler(this.bttSalvar_Click);
             // 
             // bttInserir
             // 
@@ -101,7 +113,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(22, 446);
+            this.label2.Location = new System.Drawing.Point(228, 401);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 17);
             this.label2.TabIndex = 1;
@@ -141,7 +153,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(225, 446);
+            this.label6.Location = new System.Drawing.Point(22, 446);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(92, 17);
             this.label6.TabIndex = 5;
@@ -161,7 +173,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label8.Location = new System.Drawing.Point(225, 401);
+            this.label8.Location = new System.Drawing.Point(228, 446);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(131, 17);
             this.label8.TabIndex = 7;
@@ -214,26 +226,27 @@
             // cbUnd
             // 
             this.cbUnd.FormattingEnabled = true;
-            this.cbUnd.Location = new System.Drawing.Point(228, 419);
+            this.cbUnd.Location = new System.Drawing.Point(231, 466);
             this.cbUnd.Name = "cbUnd";
-            this.cbUnd.Size = new System.Drawing.Size(188, 24);
+            this.cbUnd.Size = new System.Drawing.Size(185, 24);
             this.cbUnd.TabIndex = 17;
             // 
             // cbSubCategoria
             // 
             this.cbSubCategoria.FormattingEnabled = true;
-            this.cbSubCategoria.Location = new System.Drawing.Point(228, 466);
+            this.cbSubCategoria.Location = new System.Drawing.Point(25, 466);
             this.cbSubCategoria.Name = "cbSubCategoria";
-            this.cbSubCategoria.Size = new System.Drawing.Size(188, 24);
+            this.cbSubCategoria.Size = new System.Drawing.Size(197, 24);
             this.cbSubCategoria.TabIndex = 18;
             // 
             // cbCategoria
             // 
             this.cbCategoria.FormattingEnabled = true;
-            this.cbCategoria.Location = new System.Drawing.Point(25, 466);
+            this.cbCategoria.Location = new System.Drawing.Point(231, 421);
             this.cbCategoria.Name = "cbCategoria";
-            this.cbCategoria.Size = new System.Drawing.Size(197, 24);
+            this.cbCategoria.Size = new System.Drawing.Size(185, 24);
             this.cbCategoria.TabIndex = 19;
+            this.cbCategoria.SelectedIndexChanged += new System.EventHandler(this.cbCategoria_SelectedIndexChanged);
             // 
             // txtValorVenda
             // 
