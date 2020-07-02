@@ -52,6 +52,9 @@
             this.calculadoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.notasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.capturaDeTelaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.backupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.configuraçãoDBAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
@@ -210,7 +213,10 @@
             this.ferramentasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.calculadoraToolStripMenuItem,
             this.notasToolStripMenuItem,
-            this.capturaDeTelaToolStripMenuItem});
+            this.capturaDeTelaToolStripMenuItem,
+            this.toolStripSeparator3,
+            this.backupToolStripMenuItem,
+            this.configuraçãoDBAToolStripMenuItem});
             this.ferramentasToolStripMenuItem.Name = "ferramentasToolStripMenuItem";
             this.ferramentasToolStripMenuItem.Size = new System.Drawing.Size(104, 24);
             this.ferramentasToolStripMenuItem.Text = "Ferramentas";
@@ -218,23 +224,41 @@
             // calculadoraToolStripMenuItem
             // 
             this.calculadoraToolStripMenuItem.Name = "calculadoraToolStripMenuItem";
-            this.calculadoraToolStripMenuItem.Size = new System.Drawing.Size(196, 26);
+            this.calculadoraToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
             this.calculadoraToolStripMenuItem.Text = "Calculadora";
             this.calculadoraToolStripMenuItem.Click += new System.EventHandler(this.calculadoraToolStripMenuItem_Click);
             // 
             // notasToolStripMenuItem
             // 
             this.notasToolStripMenuItem.Name = "notasToolStripMenuItem";
-            this.notasToolStripMenuItem.Size = new System.Drawing.Size(196, 26);
+            this.notasToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
             this.notasToolStripMenuItem.Text = "Notas";
             this.notasToolStripMenuItem.Click += new System.EventHandler(this.notasToolStripMenuItem_Click);
             // 
             // capturaDeTelaToolStripMenuItem
             // 
             this.capturaDeTelaToolStripMenuItem.Name = "capturaDeTelaToolStripMenuItem";
-            this.capturaDeTelaToolStripMenuItem.Size = new System.Drawing.Size(196, 26);
+            this.capturaDeTelaToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
             this.capturaDeTelaToolStripMenuItem.Text = "Captura de Tela";
             this.capturaDeTelaToolStripMenuItem.Click += new System.EventHandler(this.capturaDeTelaToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(212, 6);
+            // 
+            // backupToolStripMenuItem
+            // 
+            this.backupToolStripMenuItem.Name = "backupToolStripMenuItem";
+            this.backupToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
+            this.backupToolStripMenuItem.Text = "Backup";
+            // 
+            // configuraçãoDBAToolStripMenuItem
+            // 
+            this.configuraçãoDBAToolStripMenuItem.Name = "configuraçãoDBAToolStripMenuItem";
+            this.configuraçãoDBAToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
+            this.configuraçãoDBAToolStripMenuItem.Text = "Configuração DBA";
+            this.configuraçãoDBAToolStripMenuItem.Click += new System.EventHandler(this.configuraçãoDBAToolStripMenuItem_Click);
             // 
             // sobreToolStripMenuItem
             // 
@@ -244,10 +268,10 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::_3M_New.Properties.Resources.logo3mreal;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 31);
+            this.pictureBox1.Image = global::_3M_New.Properties.Resources.gestoq;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1045, 658);
+            this.pictureBox1.Size = new System.Drawing.Size(1045, 692);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -257,14 +281,15 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1045, 690);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "3M SOFTWARE";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -299,6 +324,9 @@
         private System.Windows.Forms.ToolStripMenuItem unidadeDeMedidaToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem notasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem capturaDeTelaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripMenuItem backupToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem configuraçãoDBAToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -54,7 +54,6 @@
             // 
             // pnDados
             // 
-            this.pnDados.Controls.Add(this.pictureBox1);
             this.pnDados.Controls.Add(this.txtQtde);
             this.pnDados.Controls.Add(this.txtValorVenda);
             this.pnDados.Controls.Add(this.cbCategoria);
@@ -73,30 +72,37 @@
             this.pnDados.Controls.Add(this.label3);
             this.pnDados.Controls.Add(this.label2);
             this.pnDados.Controls.Add(this.label1);
+            this.pnDados.Controls.Add(this.pictureBox1);
             // 
             // bttCancelar
             // 
+            this.bttCancelar.TabIndex = 12;
             this.bttCancelar.Click += new System.EventHandler(this.bttCancelar_Click);
             // 
             // bttLocalizar
             // 
+            this.bttLocalizar.TabIndex = 1;
             this.bttLocalizar.Click += new System.EventHandler(this.bttLocalizar_Click);
             // 
             // bttAlterar
             // 
+            this.bttAlterar.TabIndex = 13;
             this.bttAlterar.Click += new System.EventHandler(this.bttAlterar_Click);
             // 
             // bttSalvar
             // 
+            this.bttSalvar.TabIndex = 11;
             this.bttSalvar.Click += new System.EventHandler(this.bttSalvar_Click);
             // 
             // bttInserir
             // 
             this.bttInserir.Location = new System.Drawing.Point(5, 4);
+            this.bttInserir.TabIndex = 0;
             this.bttInserir.Click += new System.EventHandler(this.bttInserir_Click);
             // 
             // bttExcluir
             // 
+            this.bttExcluir.TabIndex = 14;
             this.bttExcluir.Click += new System.EventHandler(this.bttExcluir_Click);
             // 
             // label1
@@ -195,7 +201,7 @@
             this.txtCodigo.Location = new System.Drawing.Point(25, 35);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(100, 22);
-            this.txtCodigo.TabIndex = 9;
+            this.txtCodigo.TabIndex = 2;
             this.txtCodigo.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // txtNome
@@ -203,7 +209,7 @@
             this.txtNome.Location = new System.Drawing.Point(25, 80);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(391, 22);
-            this.txtNome.TabIndex = 10;
+            this.txtNome.TabIndex = 3;
             // 
             // txtDescricao
             // 
@@ -211,14 +217,14 @@
             this.txtDescricao.Multiline = true;
             this.txtDescricao.Name = "txtDescricao";
             this.txtDescricao.Size = new System.Drawing.Size(391, 228);
-            this.txtDescricao.TabIndex = 11;
+            this.txtDescricao.TabIndex = 4;
             // 
             // txtValorPago
             // 
             this.txtValorPago.Location = new System.Drawing.Point(25, 376);
             this.txtValorPago.Name = "txtValorPago";
             this.txtValorPago.Size = new System.Drawing.Size(197, 22);
-            this.txtValorPago.TabIndex = 13;
+            this.txtValorPago.TabIndex = 5;
             this.txtValorPago.TextChanged += new System.EventHandler(this.txtValorPago_TextChanged);
             this.txtValorPago.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtValorPago_KeyPress);
             this.txtValorPago.Leave += new System.EventHandler(this.txtValorPago_Leave);
@@ -229,7 +235,7 @@
             this.cbUnd.Location = new System.Drawing.Point(231, 466);
             this.cbUnd.Name = "cbUnd";
             this.cbUnd.Size = new System.Drawing.Size(185, 24);
-            this.cbUnd.TabIndex = 17;
+            this.cbUnd.TabIndex = 10;
             // 
             // cbSubCategoria
             // 
@@ -237,7 +243,7 @@
             this.cbSubCategoria.Location = new System.Drawing.Point(25, 466);
             this.cbSubCategoria.Name = "cbSubCategoria";
             this.cbSubCategoria.Size = new System.Drawing.Size(197, 24);
-            this.cbSubCategoria.TabIndex = 18;
+            this.cbSubCategoria.TabIndex = 9;
             // 
             // cbCategoria
             // 
@@ -245,7 +251,7 @@
             this.cbCategoria.Location = new System.Drawing.Point(231, 421);
             this.cbCategoria.Name = "cbCategoria";
             this.cbCategoria.Size = new System.Drawing.Size(185, 24);
-            this.cbCategoria.TabIndex = 19;
+            this.cbCategoria.TabIndex = 8;
             this.cbCategoria.SelectedIndexChanged += new System.EventHandler(this.cbCategoria_SelectedIndexChanged);
             // 
             // txtValorVenda
@@ -253,7 +259,7 @@
             this.txtValorVenda.Location = new System.Drawing.Point(228, 376);
             this.txtValorVenda.Name = "txtValorVenda";
             this.txtValorVenda.Size = new System.Drawing.Size(188, 22);
-            this.txtValorVenda.TabIndex = 20;
+            this.txtValorVenda.TabIndex = 6;
             this.txtValorVenda.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtValorVenda_KeyPress);
             this.txtValorVenda.Leave += new System.EventHandler(this.txtValorVenda_Leave);
             // 
@@ -262,19 +268,19 @@
             this.txtQtde.Location = new System.Drawing.Point(25, 421);
             this.txtQtde.Name = "txtQtde";
             this.txtQtde.Size = new System.Drawing.Size(197, 22);
-            this.txtQtde.TabIndex = 21;
+            this.txtQtde.TabIndex = 7;
             this.txtQtde.TextChanged += new System.EventHandler(this.txtQtde_TextChanged);
             this.txtQtde.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtQtde_KeyPress);
             this.txtQtde.Leave += new System.EventHandler(this.txtQtde_Leave);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::_3M_New.Properties.Resources.logo3mreal;
-            this.pictureBox1.Location = new System.Drawing.Point(507, 15);
+            this.pictureBox1.Image = global::_3M_New.Properties.Resources.gestoq;
+            this.pictureBox1.Location = new System.Drawing.Point(422, -18);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(494, 506);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 22;
+            this.pictureBox1.Size = new System.Drawing.Size(611, 539);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
             // 
             // frmCadastroProduto

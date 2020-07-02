@@ -1,9 +1,12 @@
-﻿using System;
+﻿using DAL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -116,6 +119,38 @@ namespace _3M_New
             frmConsultaProduto f = new frmConsultaProduto();
             f.ShowDialog();
             f.Dispose();
+        }
+
+        private void configuraçãoDBAToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConfiguracaoDBA f = new frmConfiguracaoDBA();
+            f.ShowDialog();
+            f.Dispose();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                StreamReader arquivo = new StreamReader("ConfiguracaoBanco.txt");
+                DadosDaConexao.servidor = arquivo.ReadLine();
+                DadosDaConexao.banco = arquivo.ReadLine();
+                DadosDaConexao.usuario = arquivo.ReadLine();
+                DadosDaConexao.senha = arquivo.ReadLine();
+                arquivo.Close();
+                SqlConnection conexao = new SqlConnection();
+                conexao.ConnectionString = DadosDaConexao.StringDeConexao;
+                conexao.Open();
+                conexao.Close();
+            }
+            catch(SqlException)
+            {
+                MessageBox.Show("Erro Ao Se conectar com o Banco de Dados");
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show(erro.Message);
+            }
         }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastroSubCategoria));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.cbCatCod = new System.Windows.Forms.ComboBox();
@@ -41,28 +42,32 @@
             // 
             // pnDados
             // 
-            this.pnDados.Controls.Add(this.pictureBox1);
             this.pnDados.Controls.Add(this.txtNome);
             this.pnDados.Controls.Add(this.txtScatCod);
             this.pnDados.Controls.Add(this.label3);
             this.pnDados.Controls.Add(this.cbCatCod);
             this.pnDados.Controls.Add(this.label2);
             this.pnDados.Controls.Add(this.label1);
+            this.pnDados.Controls.Add(this.pictureBox1);
             // 
             // bttCancelar
             // 
+            this.bttCancelar.TabIndex = 7;
             this.bttCancelar.Click += new System.EventHandler(this.bttCancelar_Click);
             // 
             // bttLocalizar
             // 
+            this.bttLocalizar.TabIndex = 2;
             this.bttLocalizar.Click += new System.EventHandler(this.bttLocalizar_Click);
             // 
             // bttAlterar
             // 
+            this.bttAlterar.TabIndex = 8;
             this.bttAlterar.Click += new System.EventHandler(this.bttAlterar_Click);
             // 
             // bttSalvar
             // 
+            this.bttSalvar.TabIndex = 6;
             this.bttSalvar.Click += new System.EventHandler(this.bttSalvar_Click);
             // 
             // bttInserir
@@ -71,6 +76,7 @@
             // 
             // bttExcluir
             // 
+            this.bttExcluir.TabIndex = 9;
             this.bttExcluir.Click += new System.EventHandler(this.bttExcluir_Click);
             // 
             // label1
@@ -99,7 +105,7 @@
             this.cbCatCod.Location = new System.Drawing.Point(16, 161);
             this.cbCatCod.Name = "cbCatCod";
             this.cbCatCod.Size = new System.Drawing.Size(317, 24);
-            this.cbCatCod.TabIndex = 2;
+            this.cbCatCod.TabIndex = 5;
             this.cbCatCod.SelectedIndexChanged += new System.EventHandler(this.cbCatCod_SelectedIndexChanged);
             // 
             // label3
@@ -118,22 +124,22 @@
             this.txtScatCod.Location = new System.Drawing.Point(16, 31);
             this.txtScatCod.Name = "txtScatCod";
             this.txtScatCod.Size = new System.Drawing.Size(100, 22);
-            this.txtScatCod.TabIndex = 4;
+            this.txtScatCod.TabIndex = 3;
             // 
             // txtNome
             // 
             this.txtNome.Location = new System.Drawing.Point(16, 99);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(317, 22);
-            this.txtNome.TabIndex = 5;
+            this.txtNome.TabIndex = 4;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::_3M_New.Properties.Resources.logo3mreal;
-            this.pictureBox1.Location = new System.Drawing.Point(375, 59);
+            this.pictureBox1.Image = global::_3M_New.Properties.Resources.gestoq;
+            this.pictureBox1.Location = new System.Drawing.Point(339, -3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(625, 427);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.Size = new System.Drawing.Size(690, 517);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
@@ -141,6 +147,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.ClientSize = new System.Drawing.Size(1045, 690);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCadastroSubCategoria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Subcategoria";

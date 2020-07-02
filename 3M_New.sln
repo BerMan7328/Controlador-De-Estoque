@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3M_New", "3M_New.csproj", "{0462EF20-78E1-4D24-AA81-1AD29B6D8D2E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gestoq", "Gestoq.csproj", "{0462EF20-78E1-4D24-AA81-1AD29B6D8D2E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modelo", "..\Modelo\Modelo.csproj", "{B10AA099-1CE6-406A-9883-7A743440FC8C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "..\DAL\DAL.csproj", "{A71766BD-FDE4-49BA-A0CA-C9BEF63AF17D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "..\BBL\BLL.csproj", "{C8DE1BEE-3CA1-4197-BDC1-2A2D11A00E52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ferramentas", "..\Ferramentas\Ferramentas.csproj", "{C51F19EE-407D-49CF-8D4B-3625B47BCEB1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{C8DE1BEE-3CA1-4197-BDC1-2A2D11A00E52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8DE1BEE-3CA1-4197-BDC1-2A2D11A00E52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8DE1BEE-3CA1-4197-BDC1-2A2D11A00E52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C51F19EE-407D-49CF-8D4B-3625B47BCEB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C51F19EE-407D-49CF-8D4B-3625B47BCEB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C51F19EE-407D-49CF-8D4B-3625B47BCEB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C51F19EE-407D-49CF-8D4B-3625B47BCEB1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -52,7 +52,7 @@
             this.txtValor.Margin = new System.Windows.Forms.Padding(4);
             this.txtValor.Name = "txtValor";
             this.txtValor.Size = new System.Drawing.Size(658, 22);
-            this.txtValor.TabIndex = 7;
+            this.txtValor.TabIndex = 1;
             // 
             // btLocalizar
             // 
@@ -61,7 +61,7 @@
             this.btLocalizar.Margin = new System.Windows.Forms.Padding(4);
             this.btLocalizar.Name = "btLocalizar";
             this.btLocalizar.Size = new System.Drawing.Size(61, 57);
-            this.btLocalizar.TabIndex = 8;
+            this.btLocalizar.TabIndex = 2;
             this.btLocalizar.UseVisualStyleBackColor = true;
             this.btLocalizar.Click += new System.EventHandler(this.btLocalizar_Click);
             // 
@@ -73,7 +73,7 @@
             this.dgvDados.Name = "dgvDados";
             this.dgvDados.RowHeadersWidth = 51;
             this.dgvDados.Size = new System.Drawing.Size(749, 452);
-            this.dgvDados.TabIndex = 9;
+            this.dgvDados.TabIndex = 3;
             this.dgvDados.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDados_CellDoubleClick);
             // 
             // frmConsultaUnidadeDeMedida

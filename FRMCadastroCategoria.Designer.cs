@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastroCategoria));
             this.lbl1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtCodigo = new System.Windows.Forms.TextBox();
@@ -39,34 +40,40 @@
             // 
             // pnDados
             // 
-            this.pnDados.Controls.Add(this.pictureBox1);
             this.pnDados.Controls.Add(this.txtNome);
             this.pnDados.Controls.Add(this.txtCodigo);
             this.pnDados.Controls.Add(this.label2);
             this.pnDados.Controls.Add(this.lbl1);
+            this.pnDados.Controls.Add(this.pictureBox1);
             // 
             // bttCancelar
             // 
+            this.bttCancelar.TabIndex = 5;
             this.bttCancelar.Click += new System.EventHandler(this.bttCancelar_Click);
             // 
             // bttLocalizar
             // 
+            this.bttLocalizar.TabIndex = 1;
             this.bttLocalizar.Click += new System.EventHandler(this.bttLocalizar_Click);
             // 
             // bttAlterar
             // 
+            this.bttAlterar.TabIndex = 6;
             this.bttAlterar.Click += new System.EventHandler(this.bttAlterar_Click);
             // 
             // bttSalvar
             // 
+            this.bttSalvar.TabIndex = 4;
             this.bttSalvar.Click += new System.EventHandler(this.bttSalvar_Click);
             // 
             // bttInserir
             // 
+            this.bttInserir.TabIndex = 0;
             this.bttInserir.Click += new System.EventHandler(this.bttInserir_Click);
             // 
             // bttExcluir
             // 
+            this.bttExcluir.TabIndex = 7;
             this.bttExcluir.Click += new System.EventHandler(this.bttExcluir_Click);
             // 
             // lbl1
@@ -113,20 +120,21 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::_3M_New.Properties.Resources.logo3mreal;
-            this.pictureBox1.Location = new System.Drawing.Point(362, 0);
+            this.pictureBox1.Image = global::_3M_New.Properties.Resources.gestoq;
+            this.pictureBox1.Location = new System.Drawing.Point(-16, -15);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(639, 517);
+            this.pictureBox1.Size = new System.Drawing.Size(1046, 690);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
-            // FRMCadastroCategoria
+            // frmCadastroCategoria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.ClientSize = new System.Drawing.Size(1045, 690);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
-            this.Name = "FRMCadastroCategoria";
+            this.Name = "frmCadastroCategoria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Categoria";
             this.Load += new System.EventHandler(this.FRMCadastroCategoria_Load);

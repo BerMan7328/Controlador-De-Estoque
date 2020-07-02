@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastroUnidadeDeMedida));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtCod = new System.Windows.Forms.TextBox();
@@ -47,18 +48,22 @@
             // 
             // bttCancelar
             // 
+            this.bttCancelar.TabIndex = 6;
             this.bttCancelar.Click += new System.EventHandler(this.bttCancelar_Click);
             // 
             // bttLocalizar
             // 
+            this.bttLocalizar.TabIndex = 2;
             this.bttLocalizar.Click += new System.EventHandler(this.bttLocalizar_Click);
             // 
             // bttAlterar
             // 
+            this.bttAlterar.TabIndex = 7;
             this.bttAlterar.Click += new System.EventHandler(this.bttAlterar_Click);
             // 
             // bttSalvar
             // 
+            this.bttSalvar.TabIndex = 5;
             this.bttSalvar.Click += new System.EventHandler(this.bttSalvar_Click);
             // 
             // bttInserir
@@ -67,6 +72,7 @@
             // 
             // bttExcluir
             // 
+            this.bttExcluir.TabIndex = 8;
             this.bttExcluir.Click += new System.EventHandler(this.bttExcluir_Click);
             // 
             // label1
@@ -96,22 +102,22 @@
             this.txtCod.Location = new System.Drawing.Point(33, 39);
             this.txtCod.Name = "txtCod";
             this.txtCod.Size = new System.Drawing.Size(104, 22);
-            this.txtCod.TabIndex = 2;
+            this.txtCod.TabIndex = 3;
             // 
             // txtUnidadeMedida
             // 
             this.txtUnidadeMedida.Location = new System.Drawing.Point(33, 104);
             this.txtUnidadeMedida.Name = "txtUnidadeMedida";
             this.txtUnidadeMedida.Size = new System.Drawing.Size(349, 22);
-            this.txtUnidadeMedida.TabIndex = 3;
+            this.txtUnidadeMedida.TabIndex = 4;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::_3M_New.Properties.Resources.logo3mreal;
-            this.pictureBox1.Location = new System.Drawing.Point(418, 31);
+            this.pictureBox1.Image = global::_3M_New.Properties.Resources.gestoq;
+            this.pictureBox1.Location = new System.Drawing.Point(388, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(594, 485);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.Size = new System.Drawing.Size(624, 516);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
@@ -119,6 +125,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.ClientSize = new System.Drawing.Size(1045, 690);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCadastroUnidadeDeMedida";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro Unidade de Medida";

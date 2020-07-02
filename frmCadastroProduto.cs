@@ -72,9 +72,9 @@ namespace _3M_New
             }
             if (e.KeyChar == ',' || e.KeyChar == '.')
             {
-                if (!txtValorVenda.Text.Contains("."))
+                if (!txtValorVenda.Text.Contains(","))
                 {
-                    e.KeyChar = '.';
+                    e.KeyChar = ',';
                 }
                 else e.Handled = true;
             }
@@ -93,9 +93,9 @@ namespace _3M_New
             }
             if (e.KeyChar == ',' || e.KeyChar == '.')
             {
-                if (!txtValorPago.Text.Contains("."))
+                if (!txtValorPago.Text.Contains(","))
                 {
-                    e.KeyChar = '.';
+                    e.KeyChar = ',';
                 }
                 else e.Handled = true;
             }
@@ -103,7 +103,7 @@ namespace _3M_New
 
         private void txtValorVenda_Leave(object sender, EventArgs e)
         {
-            if (txtValorVenda.Text.Contains(".") == false)
+            if (txtValorVenda.Text.Contains(",") == false)
             {
                 txtValorVenda.Text += ",00";
             }
@@ -173,7 +173,23 @@ namespace _3M_New
 
         private void bttExcluir_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                DialogResult d = MessageBox.Show("Deseja Excluir o Registro?", "Aviso", MessageBoxButtons.YesNo);
+                if (d.ToString() == "Yes")
+                {
+                    DALConexao cx = new DALConexao(DadosDaConexao.StringDeConexao);
+                    BLLProduto bll = new BLLProduto(cx);
+                    bll.Excluir(Convert.ToInt32(txtCodigo.Text));
+                    this.LimpaTela();
+                    this.alteraBotoes(1);
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Impossível Excluir o Registro. \nO Registro Está sendo utilizado em outro local.");
+                this.alteraBotoes(3);
+            }
         }
 
         private void cbCategoria_SelectedIndexChanged(object sender, EventArgs e)
@@ -187,9 +203,9 @@ namespace _3M_New
                 cbSubCategoria.DisplayMember = "scat_nome";
                 cbSubCategoria.ValueMember = "scat_cod";
             }
-            catch (Exception erro )
+            catch 
             {
-                MessageBox.Show(erro.Message);
+             
             }
             
         }

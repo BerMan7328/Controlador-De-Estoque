@@ -103,6 +103,16 @@ namespace _3M_New.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap gestoq {
+            get {
+                object obj = ResourceManager.GetObject("gestoq", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icone3m {
             get {
                 object obj = ResourceManager.GetObject("icone3m", resourceCulture);
@@ -186,6 +196,16 @@ namespace _3M_New.Properties {
         internal static System.Drawing.Bitmap Voltar1_fw {
             get {
                 object obj = ResourceManager.GetObject("Voltar1.fw", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Wallpaper {
+            get {
+                object obj = ResourceManager.GetObject("Wallpaper", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
