@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gestoq", "Gestoq.csproj", "{0462EF20-78E1-4D24-AA81-1AD29B6D8D2E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gstoc", "Gstoc.csproj", "{0462EF20-78E1-4D24-AA81-1AD29B6D8D2E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modelo", "..\Modelo\Modelo.csproj", "{B10AA099-1CE6-406A-9883-7A743440FC8C}"
 EndProject

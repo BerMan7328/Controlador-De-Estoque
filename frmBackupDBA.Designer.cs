@@ -29,37 +29,39 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBackupDBA));
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btBackup = new System.Windows.Forms.Button();
+            this.btRestaurar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // btBackup
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(12, 47);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(758, 189);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Realizar Backup";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btBackup.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btBackup.Location = new System.Drawing.Point(12, 42);
+            this.btBackup.Name = "btBackup";
+            this.btBackup.Size = new System.Drawing.Size(758, 189);
+            this.btBackup.TabIndex = 0;
+            this.btBackup.Text = "Realizar Backup";
+            this.btBackup.UseVisualStyleBackColor = true;
+            this.btBackup.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btRestaurar
             // 
-            this.button2.Location = new System.Drawing.Point(12, 288);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(758, 189);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btRestaurar.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btRestaurar.Location = new System.Drawing.Point(12, 329);
+            this.btRestaurar.Name = "btRestaurar";
+            this.btRestaurar.Size = new System.Drawing.Size(758, 189);
+            this.btRestaurar.TabIndex = 1;
+            this.btRestaurar.Text = "Restaurar Banco de Dados";
+            this.btRestaurar.UseVisualStyleBackColor = true;
+            this.btRestaurar.Click += new System.EventHandler(this.btRestaurar_Click);
             // 
             // frmBackupDBA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(782, 553);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btRestaurar);
+            this.Controls.Add(this.btBackup);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmBackupDBA";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -70,7 +72,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btBackup;
+        private System.Windows.Forms.Button btRestaurar;
     }
 }

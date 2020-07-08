@@ -152,5 +152,26 @@ namespace _3M_New
                 MessageBox.Show(erro.Message);
             }
         }
+
+        private void backupToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBackupDBA f = new frmBackupDBA();
+            f.ShowDialog();
+            f.Dispose();
+        }
+
+        private void tipoDePagamentoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCadastroTipoPagamento f = new frmCadastroTipoPagamento();
+            f.ShowDialog();
+            f.Dispose();
+        }
+
+        private void tipoDePagamentoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmConsultaTipoPagamento f = new frmConsultaTipoPagamento();
+            f.ShowDialog();
+            f.Dispose();
+        }
     }
 }

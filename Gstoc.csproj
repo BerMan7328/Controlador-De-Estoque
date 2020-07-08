@@ -111,6 +111,12 @@
     <Compile Include="frmCadastroSubCategoria.Designer.cs">
       <DependentUpon>frmCadastroSubCategoria.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCadastroTipoPagamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroTipoPagamento.Designer.cs">
+      <DependentUpon>frmCadastroTipoPagamento.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCadastroUnidadeDeMedida.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,6 +147,12 @@
     <Compile Include="frmConsultaSubCategoria.Designer.cs">
       <DependentUpon>frmConsultaSubCategoria.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmConsultaTipoPagamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaTipoPagamento.Designer.cs">
+      <DependentUpon>frmConsultaTipoPagamento.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmConsultaUnidadeDeMedida.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,6 +179,9 @@
     <EmbeddedResource Include="frmCadastroSubCategoria.resx">
       <DependentUpon>frmCadastroSubCategoria.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroTipoPagamento.resx">
+      <DependentUpon>frmCadastroTipoPagamento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCadastroUnidadeDeMedida.resx">
       <DependentUpon>frmCadastroUnidadeDeMedida.cs</DependentUpon>
     </EmbeddedResource>
@@ -181,6 +196,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmConsultaSubCategoria.resx">
       <DependentUpon>frmConsultaSubCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaTipoPagamento.resx">
+      <DependentUpon>frmConsultaTipoPagamento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmConsultaUnidadeDeMedida.resx">
       <DependentUpon>frmConsultaUnidadeDeMedida.cs</DependentUpon>
@@ -217,6 +235,10 @@
     <ProjectReference Include="..\DAL\DAL.csproj">
       <Project>{a71766bd-fde4-49ba-a0ca-c9bef63af17d}</Project>
       <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ferramentas\Ferramentas.csproj">
+      <Project>{c51f19ee-407d-49cf-8d4b-3625b47bceb1}</Project>
+      <Name>Ferramentas</Name>
     </ProjectReference>
     <ProjectReference Include="..\Modelo\Modelo.csproj">
       <Project>{b10aa099-1ce6-406a-9883-7a743440fc8c}</Project>
@@ -279,6 +301,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\gestoq.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GestocReal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GestocReal2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GestocReal3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

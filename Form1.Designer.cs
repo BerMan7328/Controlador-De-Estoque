@@ -38,6 +38,8 @@
             this.subcategoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.unidadeDeMedidaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.produtosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.tipoDePagamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.fornecedoresToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,6 +48,7 @@
             this.subcategoriasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.unidadeDeMedidaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.produtosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.movimentaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.relatóriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ferramentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -57,6 +60,7 @@
             this.configuraçãoDBAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tipoDePagamentoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -86,7 +90,9 @@
             this.categoriaToolStripMenuItem,
             this.subcategoriaToolStripMenuItem,
             this.unidadeDeMedidaToolStripMenuItem,
-            this.produtosToolStripMenuItem});
+            this.produtosToolStripMenuItem,
+            this.toolStripSeparator4,
+            this.tipoDePagamentoToolStripMenuItem});
             this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
             this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(82, 24);
             this.cadastroToolStripMenuItem.Text = "Cadastro";
@@ -137,6 +143,18 @@
             this.produtosToolStripMenuItem.Text = "Produtos";
             this.produtosToolStripMenuItem.Click += new System.EventHandler(this.produtosToolStripMenuItem_Click);
             // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(221, 6);
+            // 
+            // tipoDePagamentoToolStripMenuItem
+            // 
+            this.tipoDePagamentoToolStripMenuItem.Name = "tipoDePagamentoToolStripMenuItem";
+            this.tipoDePagamentoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.tipoDePagamentoToolStripMenuItem.Text = "Tipo de Pagamento";
+            this.tipoDePagamentoToolStripMenuItem.Click += new System.EventHandler(this.tipoDePagamentoToolStripMenuItem_Click);
+            // 
             // consultaToolStripMenuItem
             // 
             this.consultaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -146,7 +164,9 @@
             this.categoriasToolStripMenuItem,
             this.subcategoriasToolStripMenuItem,
             this.unidadeDeMedidaToolStripMenuItem1,
-            this.produtosToolStripMenuItem1});
+            this.produtosToolStripMenuItem1,
+            this.toolStripSeparator5,
+            this.tipoDePagamentoToolStripMenuItem1});
             this.consultaToolStripMenuItem.Name = "consultaToolStripMenuItem";
             this.consultaToolStripMenuItem.Size = new System.Drawing.Size(80, 24);
             this.consultaToolStripMenuItem.Text = "Consulta";
@@ -195,6 +215,11 @@
             this.produtosToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
             this.produtosToolStripMenuItem1.Text = "Produtos";
             this.produtosToolStripMenuItem1.Click += new System.EventHandler(this.produtosToolStripMenuItem1_Click);
+            // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(221, 6);
             // 
             // movimentaçãoToolStripMenuItem
             // 
@@ -252,6 +277,7 @@
             this.backupToolStripMenuItem.Name = "backupToolStripMenuItem";
             this.backupToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
             this.backupToolStripMenuItem.Text = "Backup";
+            this.backupToolStripMenuItem.Click += new System.EventHandler(this.backupToolStripMenuItem_Click);
             // 
             // configuraçãoDBAToolStripMenuItem
             // 
@@ -268,13 +294,20 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::_3M_New.Properties.Resources.gestoq;
+            this.pictureBox1.Image = global::_3M_New.Properties.Resources.GestocReal3;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1045, 692);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            // 
+            // tipoDePagamentoToolStripMenuItem1
+            // 
+            this.tipoDePagamentoToolStripMenuItem1.Name = "tipoDePagamentoToolStripMenuItem1";
+            this.tipoDePagamentoToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.tipoDePagamentoToolStripMenuItem1.Text = "Tipo de Pagamento";
+            this.tipoDePagamentoToolStripMenuItem1.Click += new System.EventHandler(this.tipoDePagamentoToolStripMenuItem1_Click);
             // 
             // Form1
             // 
@@ -311,7 +344,6 @@
         private System.Windows.Forms.ToolStripMenuItem relatóriosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ferramentasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sobreToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem fornecedoresToolStripMenuItem1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem categoriasToolStripMenuItem;
@@ -327,6 +359,11 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripMenuItem backupToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem configuraçãoDBAToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+        private System.Windows.Forms.ToolStripMenuItem tipoDePagamentoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolStripMenuItem tipoDePagamentoToolStripMenuItem1;
     }
 }
